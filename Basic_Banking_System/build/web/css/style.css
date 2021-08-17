@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.section-1{
+    height: 93vh;
+    position: relative;
+}
+
+.section-2{
+    margin-top: 10rem;
+    padding-top: 4.5rem;
+    height: 100%;
+    margin-bottom: 10rem;
+}
+
+.pEl{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    color: white;
+}
+
+.pEl h2{
+    font-size: 2.5rem;
+}
+
+.pEl p{
+    font-size: 2rem
+}
+
+.bg {
+  width: 100vw;
+  height: 100%;
+  background-image: url("../images/download (2).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  min-height: 20px
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  position: fixed;
+    width: 100%;
+}
+
+.nav-items {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+.nav-items .logo{
+    padding-left: 7rem;
+}
+
+.navbar .items ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: auto
+}
+
+.navbar .items li {
+  margin-left: 1.5rem;
+  padding-right: 2.5rem;
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+}
+
+.navbar .items li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar .items li a:hover{
+    background-color: white;
+    color: black;
+    padding: 2px 8px;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* ####################### cards css#################### */
+
+.card-deck{
+    width: 90%;
+    padding-left: 18rem;
+    margin-right: 10%;
+}
+
+.card-deck .image {
+  height: 18rem;
+}
+
+.card .title {
+    height: 2.8rem;
+    background-color: aliceblue;
+    align-items: center;
+    align-content: center;
+}
+.card .title h5{
+    align-content: center;
+    align-items: center;
+}
+
+.card {
+  position: relative;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: all 0.3s ease-in-out;
+
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover{
+  transform: scale(1.2, 1.2);
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.card-body .btn{
+    width: 5.5rem;
+}
+.card-body .btn-d{
+    text-align: center;
+}
+
+.table{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7rem;
+}
+
+.nav-user{
+   background-color: black;
+}
+
+/*------------------- transaction form ------------------*/
+
+.trans-body{
+    background-image: url("../images/download (2).jpg");
+    object-fit: cover;
+    /*object-position: center;*/
+    background-repeat: no-repeat;
+    width: 100%
+}
+
+.form {
+ border: 2px solid black;
+ max-width: 50rem;
+ margin-right: auto;
+ margin-left: auto;
+ margin-top: 90px;
+ height: 13rem;
+ margin-bottom: 2rem;
+ border-radius: 1%;
+ background-color: #f2f2f2;
+}
+
+.amount{
+    display: flex;
+    flex-direction: row;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.form .label{
+    flex-basis: 20%;
+    font-size:22px;
+    font-weight: 500;
+    width: 5rem;
+
+}
+.form .selector{
+    flex-basis: 55%;
+    width: 5rem;
+    margin-left: 5rem;
+}
+
+.center-form{
+    margin-left: 65px
+}
+
+.button{
+    margin-left: 0;
+    width: 7rem;
+}
+h4 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-top: 200rem;
+}
+          
+h4:before,
+h4:after {
+   content: "";
+   flex: 1 1;
+   border-bottom: 3px solid #000;
+   margin: auto;
+}
+
+.center-detail{
+    margin-left: 45px;
+    margin-top: 12px;
+}
+
+.detail-user{
+  display: flex;
+  flex-direction: row
+}
+
+.detail-user .label{
+    flex-basis:30%;
+}
+
+.detail-user .c{
+   margin-left: 2rem;
+}
+.detail-user .i{
+   margin-left: 9.8rem;
+}
+.detail-user  .e{
+   margin-left: 8.4rem;
+}
+.detail-user .n{
+   margin-left: 8rem;
+}
+
+.detail-user .selector{
+    margin-left: 4px;
+    font-size: 18px;
+    color: black;
+    font-weight: 400
+}
+
+.detail-form{
+    margin-top: 60px
+}
+/*-----------------  Footer -----------------------*/
+
+.footer{
+    background-color: black;
+    height: 7rem;
+}
+.footer .info{
+    text-align: center;
+    padding-top: 1.5rem;
+}
+.footer p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.all-user-footer{
+    margin-top: 2rem;
+}
+
+.trans-footer{
+    margin-top: 5rem;
+    height: 6rem
+}
+
+table tr .th{
+    padding-left: 2.5rem
+}
+
+ table .th-font{
+    font-size: 1.2rem;
+}
